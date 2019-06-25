@@ -5,7 +5,7 @@
     "list": [{
       "th": "16th",
       "homeWork": "http://192.168.2.100:8080/upload/16",
-      "homeWorkGather": "",
+      "homeWorkGather": "http://192.168.2.100:8080/stat/list",
       "seatingChart": "",
       "information": "https://docs.qq.com/sheet/DSk53eWpKZ2trbWVG?opendocxfrom=admin&tab=BB08J2"
     },{
