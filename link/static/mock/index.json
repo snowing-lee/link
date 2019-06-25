@@ -1,0 +1,25 @@
+{
+  "ret": true,
+  "data": {
+    "dormitory": "https://docs.qq.com/sheet/DVUdkdWNuRG9Yc1NU?opendocxfrom=admin&tab=BB08J2",
+    "list": [{
+      "th": "16th",
+      "homeWork": "http://192.168.2.100:8080/upload/16",
+      "homeWorkGather": "",
+      "seatingChart": "",
+      "information": "https://docs.qq.com/sheet/DSk53eWpKZ2trbWVG?opendocxfrom=admin&tab=BB08J2"
+    },{
+      "th": "15th",
+      "homeWork": "http://192.168.2.100:8080/java/",
+      "homeWorkGather": "http://192.168.2.100:8080/java/list",
+      "seatingChart": "https://docs.qq.com/sheet/DVXRpdW5GR2FRY2hu?tab=BB08J2&coord=G39%24G39%240%240%2426%240",
+      "information": "https://docs.qq.com/sheet/DVXRLQkxzWkxZd1NT?opendocxfrom=admin&tab=BB08J2"
+    },{
+      "th": "14th",
+      "homeWork": "http://192.168.2.100:8080/upload/14",
+      "homeWorkGather": "http://192.168.2.100:8080/result/list",
+      "seatingChart": "https://docs.qq.com/sheet/DVWJ5WHFBb29JbnZN?opendocxfrom=admin&tab=BB08J2&coord=E183%24E183%240%240%240%240",
+      "information": "https://docs.qq.com/sheet/DVVN2Q0VYZnpWdXZo?opendocxfrom=admin&tab=BB08J2"
+    }]
+  }
+}
