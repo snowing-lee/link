@@ -49,8 +49,11 @@ export default {
   },
   methods: {
     getHomeInfo() {
+      // tomcat下远程
       axios.get('/link/static/mock/index.json')
         .then(this.getHomeInfoSucc);
+
+      // 本地调试
       // axios.get('/static/mock/index.json')
       //   .then(this.getHomeInfoSucc);
     },
