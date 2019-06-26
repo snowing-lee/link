@@ -8,7 +8,7 @@
       </div>
 
       <div class="link-href">
-        <div  v-for="(item, index) of list" :key="index">
+        <div  class="link-th" v-for="(item, index) of list" :key="index">
           <h2>{{item.th}}</h2>
           <ul>
             <li><a class="aaa" :href="item.homeWork">作业上传</a></li>
@@ -21,8 +21,13 @@
           </ul>
         </div>
       </div>
+
+      <br>
       <div class="foot">
         <a :href="dormitory">宿舍安排</a>
+        <br>
+        <br>
+        <a :href="meeting">周会进度</a>
       </div>
     </div>
   </div>
@@ -38,6 +43,7 @@ export default {
       tip1: '1,作业提交及作业汇总情况查看时,确认已连接局域网(网线或wangdao-meeting)',
       msg: '资料汇总',
       dormitory: '',
+      meeting: '',
       list: [],
     };
   },
@@ -45,6 +51,8 @@ export default {
     getHomeInfo() {
       axios.get('/link/static/mock/index.json')
         .then(this.getHomeInfoSucc);
+      // axios.get('/static/mock/index.json')
+      //   .then(this.getHomeInfoSucc);
     },
     getHomeInfoSucc(res) {
       const res1 = res.data;
@@ -52,6 +60,7 @@ export default {
         const data1 = res1.data;
         this.list = data1.list;
         this.dormitory = data1.dormitory;
+        this.meeting = data1.meeting;
       }
     },
   },
@@ -66,16 +75,28 @@ export default {
 <style scoped>
 .link {
   margin-left: 4rem;
+
 }
   .title {
     margin-left: 5rem;
     font-size: 200%;
+    text-align: center;
   }
   .tip {
     color: red;
     margin-left: 5rem;
     font-size: 80%;
   }
+  .link-href {
+    margin-top: 2rem;
+    width: 100%;
+    height: 20rem;
+    border:1px solid
+  }
+    .link-th {
+      margin-left: 6rem;
+      float: left;
+    }
   .aaa {
     line-height: 1rem;
   }
